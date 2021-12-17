@@ -22,8 +22,8 @@ class GetStocks:
         # SQL inner join; preserve the order of the left keys
         # 시가총액 기준 내림차순 정렬
         stock_infos = common_stock.merge(all_stock).sort_values(by=["시가총액"], ascending=False, ignore_index=True)
-
-        self.stock_infos = stock_infos.loc[0:9].reset_index()    #
+        # 
+        self.stock_infos = stock_infos.loc[0:100].reset_index()    
 
 
     # 다중회사의 자본잠식률 구하는 함수
