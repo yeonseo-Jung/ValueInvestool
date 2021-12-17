@@ -278,7 +278,7 @@ def get_stock_info(market, date):    # market: kospi or kosdaq or konex    # dat
 
 
 # 한국거래소(KRX) 웹사이트에서 보통주 정보 크롤링 함수 
-def get_common_stock_info(market):    # market: kospi or kosdaq or konex  
+def get_common_stock_info(market):    # market: kospi or kosdaq or konex
     # Request URL
     url = 'http://data.krx.co.kr/comm/bldAttendant/getJsonData.cmd'
     # Form Data
@@ -296,7 +296,7 @@ def get_common_stock_info(market):    # market: kospi or kosdaq or konex
         parms['mktId'] = "KNX"
         
     
-    # Request Headers ()
+    # Request Headers
     headers = {
         'Referer': 'http://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201020201',
         'Upgrade-Insecure-Requests': '1',
